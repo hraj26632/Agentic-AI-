@@ -1,28 +1,26 @@
-Agentic AI – Lab Task 1
-Fine-Tuning a Small Language Model (SLM)
+# Agentic AI – Lab Task 1  
+## Fine-Tuning a Small Language Model (SLM)
 
-This lab task demonstrates the process of fine-tuning a Small Language Model (SLM) on a text dataset using Google Colab and the Hugging Face library. The aim of this task is to gain practical experience in adapting a pretrained language model for a specific natural language processing task and analyzing its performance after training.
+## Introduction  
+This lab task demonstrates the fine-tuning of a Small Language Model (SLM) using Google Colab and the Hugging Face ecosystem. The objective of this task is to understand how a pretrained language model can be adapted to a specific text dataset and evaluated for its performance.
 
-Dataset
+## Objective  
+The main objective of this experiment is to fine-tune a small pretrained language model on a text dataset and analyze its performance after training.
 
-The IMDb Movie Reviews dataset was used in this experiment. It contains textual movie reviews labeled with sentiment information. The dataset was utilized to train the model to understand and classify sentiment based on textual content.
+## Dataset  
+The IMDb Movie Reviews dataset was used for this task. It is a widely used text dataset containing movie reviews labeled based on sentiment polarity. The dataset helps the model learn patterns in natural language related to positive and negative sentiments.
 
-Model
+## Model  
+DistilBERT (distilbert-base-uncased) was selected as the Small Language Model for this experiment. It is a lightweight transformer-based model with fewer than 3 billion parameters, making it suitable for fine-tuning on limited computational resources such as Google Colab.
 
-For this task, DistilBERT was chosen as the Small Language Model. It is a compact and efficient transformer-based model with fewer than 3 billion parameters, making it suitable for fine-tuning in environments with limited computational resources such as Google Colab.
+## Methodology  
+The dataset was loaded from the Hugging Face repository and preprocessed using tokenization to convert text into numerical form. The pretrained DistilBERT model was then fine-tuned on the training dataset for sentiment classification. During training, the model’s parameters were updated to improve task-specific performance.
 
-Methodology
+## Evaluation  
+The performance of the fine-tuned model was evaluated using accuracy as the evaluation metric. The model was tested on unseen data to measure its generalization capability.
 
-The dataset was loaded from the Hugging Face repository and preprocessed through tokenization to convert text into a format suitable for model training. The pretrained DistilBERT model was then fine-tuned on the training dataset for sentiment classification. The training process adjusted the model weights to improve performance on the given task.
+## Observations  
+After fine-tuning, the model showed improved performance in correctly classifying movie reviews. The results indicate that the model learned meaningful patterns from the dataset and performed better than the base pretrained model.
 
-Evaluation
-
-The model’s performance was evaluated using accuracy as the primary metric. Evaluation was conducted on a separate test dataset to measure how well the fine-tuned model generalizes to unseen data.
-
-Observations
-
-After fine-tuning, the model demonstrated improved capability in correctly identifying positive and negative sentiments from movie reviews. The fine-tuned model performed better than the base pretrained model on the target dataset.
-
-Conclusion
-
-This experiment highlights the effectiveness of fine-tuning small language models for task-specific applications. It shows that even lightweight pretrained models can achieve good performance when adapted properly using modern deep learning frameworks.
+## Conclusion  
+This lab task demonstrates that Small Language Models can be effectively fine-tuned for specific natural language processing tasks. Even with limited training and computational resources, fine-tuning significantly improves model performance.
